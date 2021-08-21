@@ -20,10 +20,10 @@
                     <h3>Memory</h3>
                     <div class="row">
                         <div class="col-6">
-                            <p class="border rounded py-1 text-center">8GB unified memory</p>
+                            <button id="memory-8" class="rounded p-1">8GB unified memory</button>
                         </div>
                         <div class="col-6">
-                            <p class="border rounded py-1 text-center">16GB unified memory</p>
+                            <button id="memory-16" class="rounded p-1">16GB unified memory</button>
                         </div>
                     </div>
                 </div>
@@ -32,13 +32,13 @@
                     <h3>Storage</h3>
                     <div class="row">
                         <div class="col-4">
-                            <p class="border rounded text-center">256GB SSD storage</p>
+                            <button id="storage-256" class="rounded p-1">256GB SSD storage</button>
                         </div>
                         <div class="col-4">
-                            <p class="border rounded text-center">512GB SSD storage</p>
+                            <button id="storage-512" class="rounded p-1">512GB SSD storage</button>
                         </div>
                         <div class="col-4">
-                            <p class="border rounded text-center">1TB SSD storage</p>
+                            <button id="storage-1tb" class="rounded p-1">1TB SSD storage</button>
                         </div>
                     </div>
                 </div>
@@ -47,10 +47,10 @@
                     <h3>Choose your delivery option</h3>
                     <div class="row">
                         <div class="col-6">
-                            <p class="border rounded py-1 text-center">Friday, Aug 25 FREE Prime Delivery</p>
+                            <button id="free-delivery" class="rounded p-1">Friday, Aug 25 FREE Prime Delivery</button>
                         </div>
                         <div class="col-6">
-                            <p class="border rounded py-1 text-center">Friday, Aug 21 Delivery charge $20</p>
+                            <button id="charged-delivery" class="rounded p-1">Friday, Aug 21 Delivery charge $20</button>
                         </div>
                     </div>
                 </div>
@@ -64,19 +64,19 @@
                         </tr>
                         <tr>
                             <td class="fw-bold">Extra Memory Cost</td>
-                            <td class="fw-bold">$0</td>      
+                            <td class="fw-bold">$<span id="memory-cost">0</span> </td>      
                         </tr>
                         <tr>
                             <td class="fw-bold">Extra Storage Cost</td>
-                            <td class="fw-bold">$0</td>      
+                            <td class="fw-bold">$<span id="storage-cost">0</span></td>      
                         </tr>
                         <tr>
                             <td class="fw-bold">Delivery charge</td>
-                            <td class="fw-bold">$0</td>      
+                            <td class="fw-bold">$<span id="delivery-cost">0</span></td>      
                         </tr>
                         <tr>
                             <td class="fw-bold">Total Price</td>
-                            <td class="fw-bold">$1299</td>      
+                            <td class="fw-bold">$<span id='total-price'>1299</span></td>      
                         </tr>
                     </tbody>
                 </table>
@@ -90,5 +90,8 @@
         <hr>
         <h1 class="text-center">Total: $1299</h1>
     </div>
+
+
+    <script src="js/app.js"></script>
 </body>
 </html>
